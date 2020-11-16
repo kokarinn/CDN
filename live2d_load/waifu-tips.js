@@ -32,7 +32,7 @@ function loadWidget(config) {
 	sessionStorage.removeItem("waifu-text");
 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
 			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="250" height="300"></canvas>
+			<canvas id="live2d" width="250" height="250"></canvas>
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-user-circle"></span>
 				<span class="fa fa-lg fa-street-view"></span>
@@ -279,7 +279,7 @@ function initWidget(config, apiPath = "/") {
                 setCookie("live2d", "Show", 7)
         },
         10) : setTimeout(function() {
-                document.body.clientWidth > 860 && ($(".hide-live2d").css("bottom", "156px"), $(".save-live2d, .switch-live2d, .live2d-pio, .live2d-tia").removeClass("hide-live2d-tool")),
+                document.body.clientWidth > 860 && ($(".hide-live2d").css("bottom", "185px"), $(".save-live2d, .switch-live2d, .live2d-pio, .live2d-tia").removeClass("hide-live2d-tool")),
                 $(".hide-live2d .keys").html("Hide"),
 		localStorage.removeItem("waifu-display"),
 				document.getElementById("waifu").style.display = "",
