@@ -1,6 +1,6 @@
-// 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/kokarinn/cdn@6.6/live2d_load/";
-const tips_path = "https://cdn.jsdelivr.net/gh/kokarinn/cdn@6.6/live2d_load/";
+// 注意：live2d_path 参数应使用绝对路径，记得修改哦
+const live2d_path = "https://cdn.jsdelivr.net/gh/kokarinn/cdn@10.0/live2d_load/";
+const tips_path = "https://cdn.jsdelivr.net/gh/kokarinn/cdn@10.0/live2d_load/";
 //const live2d_path = "";
 //const live2d_path = "/live2d-widget/";
 
@@ -33,27 +33,27 @@ function loadExternalResource(url, type) {
 		loadExternalResource(live2d_path + "waifu-tips.js", "js")
 	]).then(() => {
 		initWidget({
-			waifuPath: tips_path + "waifu-tips.min.json",
+			waifuPath: tips_path + "waifu-tips.json",
 			apiPath: "https://live2d.fghrsh.net/api/",
-			//cdnPath: "https://cdn.jsdelivr.net/gh/kokarinn/cdn@6.6/live2d_api/"
+			cdnPath: "https://cdn.jsdelivr.net/gh/kokarinn/cdn@10.0/live2d_api/"
 		});
 	});
 console.log(`
-く__,.ヘヽ.        /  ,ー､ 〉
-			＼ ', !-─‐-i  /  /´
-			／｀ｰ'       L/／｀ヽ､
-		/   ／,   /|   ,   ,       ',
-		ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
-		ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
-		!,/7 '0'     ´0iソ|    |
-		|.从"    _     ,,,, / |./    |
-		ﾚ'| i＞.､,,__  _,.イ /   .i   |
-			ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
-			| |/i 〈|/   i  ,.ﾍ |  i  |
-			.|/ /  ｉ：    ﾍ!    ＼  |
-			kヽ>､ﾊ    _,.ﾍ､    /､!
-			!'〈//｀Ｔ´', ＼ ｀'7'ｰr'
-			ﾚ'ヽL__|___i,___,ンﾚ|ノ
-				ﾄ-,/  |___./
-				'ｰ'    !_,.:
+  く__,.ヘヽ.        /  ,ー､ 〉
+           ＼ ', !-─‐-i  /  /´
+           ／｀ｰ'       L/／｀ヽ､
+         /   ／,   /|   ,   ,       ',
+       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
+        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
+          !,/7 '0'     ´0iソ|    |
+          |.从"    _     ,,,, / |./    |
+          ﾚ'| i＞.､,,__  _,.イ /   .i   |
+            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
+              | |/i 〈|/   i  ,.ﾍ |  i  |
+             .|/ /  ｉ：    ﾍ!    ＼  |
+              kヽ>､ﾊ    _,.ﾍ､    /､!
+              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+              ﾚ'ヽL__|___i,___,ンﾚ|ノ
+                  ﾄ-,/  |___./
+                  'ｰ'    !_,.:
 `);
